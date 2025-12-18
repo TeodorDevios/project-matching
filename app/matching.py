@@ -1,4 +1,3 @@
-# app/matching.py
 import math
 from app.models import User, Project
 from sqlalchemy.ext.asyncio import AsyncSession

@@ -1,4 +1,3 @@
-# app/crud.py
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 from sqlalchemy import select

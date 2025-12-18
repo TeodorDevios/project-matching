@@ -1,13 +1,10 @@
-# app/main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import asyncio
-from app.database import init_db  # ← ПРАВИЛЬНО
-  # ← Относительный импорт
-from app.routes import auth, projects, applications  # ← Относительный импорт
+from app.database import init_db
+from app.routes import auth, projects, applications
 
 
-# Создаём FastAPI приложение
 app = FastAPI(
     title="Project Partner Matching API",
     description="Платформа для поиска партнеров на проекты",
